@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <title>News Wale</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand brandLogo" href="index.html">News Wale</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input id="searchBar" class="form-control me-2" type="search" placeholder="Search articles"
+            aria-label="Search">
+          <button id="searchBtn" class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="welcomeSection" class="conatainer mx-auto my-4">
+      <h1 class="my-4 mx-auto">Welcome to News Wale !</h1>
+      <p>Here you will find all the hot topics of today. You can search accross 50+ different countries to find the
+        articles that you want to read.</p>
+    </div>
+
+    <hr class="my-4">
+
+    <div id="carouselExampleDark" class="container-fluid carousel carousel-light slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="Images/newspaper20.jpg" class="d-block w-100 imgCarousel" alt="newspaper">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>News Wale</h5>
+            <p>Read top trending news articles with us..</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Images/typewriter0.jpg" class="d-block w-100 imgCarousel" alt="typewriter">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>News Wale</h5>
+            <p>Read latest news articles from all over the world.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/newspaper0.jpg" class="d-block w-100 imgCarousel" alt="newspaper">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>News Wale</h5>
+            <p>You can read news articles here without any hustle.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <hr class="my-4">
+
+    <div>
+      <h2 class="my-2">Filter your news by selecting a country</h2>
+      <form class="row g-3 my-4">
+        <div class="col-auto">
+          <label for="countryMsg" class="visually-hidden">Email</label>
+          <h4>Select country</h4>
+        </div>
+        <div class="col-auto">
+          <select class="form-select form-select-sm" id="selectCountry" aria-label=".form-select-sm example">
+            <option value="ar">Argentina</option>
+            <option value="au">Austrailia</option>
+            <option value="at">Austria</option>
+            <option value="be">Belgium</option>
+            <option value="br">Brazil</option>
+            <option value="bg">Bulgaria</option>
+            <option value="ca">Canada</option>
+            <option value="cn">China</option>
+            <option value="co">Colombia</option>
+            <option value="cu">Cuba</option>
+            <option value="cz">Czech Republic</option>
+            <option value="eg">Egypt</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="gr">Greece</option>
+            <option value="hk">Hong Kong</option>
+            <option value="hu">Hungary</option>
+            <option value="in" selected>India</option>
+            <option value="id">Indonesia</option>
+            <option value="ie">Ireland</option>
+            <option value="il">Israel</option>
+            <option value="it">Italy</option>
+            <option value="it">Itaky</option>
+            <option value="jp">Japan</option>
+            <option value="lv">Latvia</option>
+            <option value="lt">Lithuania</option>
+            <option value="my">Malaysia</option>
+            <option value="mx">Mexico</option>
+            <option value="ma">Morocco</option>
+            <option value="nl">Netherlands</option>
+            <option value="mx">Mexico</option>
+            <option value="nz">New Zealand</option>
+            <option value="ng">Nigeria</option>
+            <option value="no">Norway</option>
+            <option value="ph">Philippines</option>
+            <option value="pl">Poland</option>
+            <option value="pt">Portugal</option>
+            <option value="ro">Romania</option>
+            <option value="ru">Rissia</option>
+            <option value="sa">Saudi Arabia</option>
+            <option value="rs">Serbia</option>
+            <option value="sg">Singapore</option>
+            <option value="sk">Slovalia</option>
+            <option value="za">South Africa</option>
+            <option value="kr">South Korea</option>
+            <option value="se">Sweden</option>
+            <option value="ch">Switzerland</option>
+            <option value="tw">Taiwan</option>
+            <option value="th">Thailand</option>
+            <option value="tr">Turkey</option>
+            <option value="ae">UAE</option>
+            <option value="ua">Ukraine</option>
+            <option value="gb">United Kingdom</option>
+            <option value="us">United States</option>
+            <option value="ve">Venuzuela</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <button type="submit" id="showNewsFrom" class="btn btn-warning mb-3">Show News Articles</button>
+        </div>
+      </form>
+    </div>
+
+    <h2 class="my-1">Today's trending news articles in <span id="trendingNews"> India</span></h2>
+    <h4 id="searchResMsg"></h4>
+    <div class="accordion accordion-flush" id="accordionFlushExample"> </div>
+    <button type="button" class="btn btn-warning my-3 homeBtn">&#8592; Go back to home</button>
+    <div class="container noNews">
+      <p>Sorry there is no news.</p>
+      <p>Check your internet connection or there may be a bad request.</p>
+      <p>Please come back later to read articles</p>
+    </div>
+
+  </div>
+
+  <footer class="site-footer mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify"><em>News Wale</em> is a simple web app for reading news articles on daily basis. With
+            News Wale you can get top trending news articles, here you can read news articles of 50+ different countries
+            all over the world. News Wale focuses on simplicity. The user interface is so friendly and minimalistic
+            that everybody will love it regardless of any age group.</p>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>Coded with &#10084;&#65039; by <em>Sam!</em></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <a href="#">News Wale</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="JS/app.js"></script>
+</body>
+
+</html>

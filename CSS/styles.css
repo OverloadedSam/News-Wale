@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap");
+
+/* Logo styling */
+.brandLogo {
+  margin: 0rem 1.7rem;
+  font-family: "Lemonada", cursive;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+/* Welcome section */
+#welcomeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#welcomeSection > p {
+  margin: 0px;
+}
+
+/* When there is some error in fetching data */
+.noNews {
+  border: 2px dotted #ffc107;
+  border-radius: 10px;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Select country drop down */
+#selectCountry {
+  width: auto;
+  height: 2.5rem;
+  font-weight: bold;
+  border: 2px solid #ffc107;
+}
+
+/* Search message displaying by JS */
+#searchResMsg {
+  display: none;
+}
+
+/* Go back to home button displaying by JS */
+.homeBtn {
+  display: none;
+}
+
+/* Footer design */
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #c5c5c5;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #ffc107;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #c5c5c5;
+}
+.site-footer a:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #c5c5c5;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.copyright-text {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+}
